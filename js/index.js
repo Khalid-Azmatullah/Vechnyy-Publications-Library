@@ -73,7 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (s) {
         ok = ok && (
           pub.title.toLowerCase().includes(s) ||
-          pub.author.toLowerCase().includes(s)
+          pub.author.toLowerCase().includes(s) || 
+          pub.mic.toLowerCase().includes(s)
         );
       }
       return ok;
