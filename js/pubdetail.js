@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <h2>${pub.title}</h2>
       <div class="meta">
         <strong>UID:</strong> ${pub.author} |
-        <strong>Release Date:</strong> ${formatMonthDate(pub.monthDate)} ${pub.year} |<br><br>
+        <strong>Release Date:</strong> ${formatMonthDate(pub.monthDate)} ${pub.year} |
 
         
         <strong>Type:</strong> ${pub.fulltype} | 

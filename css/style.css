@@ -31,6 +31,7 @@ header p {
   padding: 10px;
   display: flex;
   justify-content: center;
+  /* justify-self: center; */
   background: #d8ceba;
   border-bottom: 1px solid #aaa;
 }
@@ -160,18 +161,22 @@ main {
   border: 1px solid #ccc;
   padding: 20px;
   margin: 20px auto;
-  max-width: 700px;
+  max-width: 800px;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 #pub-detail h2 {
-  margin-top: 0;
+  font-size: 1.7em;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 #pub-detail .meta {
   font-size: 0.95em;
   color: #555;
   margin: 10px 0;
+  text-align: center;
 }
 
 #pub-detail .content {

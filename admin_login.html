@@ -3,17 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login — Vechnyy Library</title>
-    <script>
-  // check login before doing anything else
-  (function(){
-    const unlocked = sessionStorage.getItem("unlocked");
-    if (unlocked !== "yes") {
-      // not logged in, go to login page
-      window.location.href = "login.html";
-    }
-  })();
-</script>
+  <title>Admin Login — Vechnyy Library</title>
   <style>
     body {
       font-family: Georgia, serif;
@@ -57,7 +47,7 @@
 </head>
 <body>
   <div id="loginBox">
-    <h2>Enter Password</h2>
+    <h2>Enter Admin Password</h2>
     <input type="password" id="pwd" placeholder="Password" />
     <button id="btnLogin">Login</button>
     <p id="errorMsg">Wrong password, try again.</p>
@@ -65,7 +55,7 @@
 
   <script>
     (function(){
-      const PASSWORD = "09110404122008";  // set your password
+      const PASSWORD = "vechnyy_forever@123";  // set your password
       const btn = document.getElementById("btnLogin");
       const input = document.getElementById("pwd");
       const err = document.getElementById("errorMsg");
@@ -78,10 +68,9 @@
       function attempt() {
         const v = input.value;
         if (v === PASSWORD) {
-          // Optionally, set something in sessionStorage
-          sessionStorage.setItem("unlocked", "yes");
-          // redirect to index
-          window.location.href = "index.html";
+          sessionStorage.setItem("admin_unlocked", "yes");
+          // redirect to create
+          window.location.href = "create.html";
         } else {
           err.style.display = "block";
         }
